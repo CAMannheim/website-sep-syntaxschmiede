@@ -1812,6 +1812,7 @@ figcaption {
 .home_einblicke_image {
   border-radius: var(--_ui-styles---radius--large);
   object-fit: contain;
+  border: 1px solid #000;
   width: 100%;
   position: absolute;
 }
@@ -2671,7 +2672,7 @@ figcaption {
   }
 
   .heading-style-h1 {
-    font-size: 3.25rem;
+    font-size: 2.8rem;
   }
 
   .heading-style-h4 {
@@ -2812,8 +2813,7 @@ figcaption {
 
   .home_projektuberblick_content {
     grid-column-gap: 3rem;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-flow: row;
+    grid-template-columns: 1fr;
     min-height: auto;
   }
 
@@ -2824,7 +2824,7 @@ figcaption {
   }
 
   .home_technologien_list {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
   .home_unser-weg_item {
@@ -2850,6 +2850,7 @@ figcaption {
 
   .team_list {
     grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
   }
 
   .heading-style-h3-2 {
@@ -3515,7 +3516,46 @@ figcaption {
     max-width: none;
   }
 
-  .home_projektuberblick_content, .home_einblicke_component {
+  .heading-style-h2 {
+    font-size: 1.9rem;
+  }
+
+  .heading-style-h1 {
+    font-size: 1.8rem;
+  }
+
+  .heading-style-h4 {
+    font-size: 1.3rem;
+  }
+
+  .heading-style-h3 {
+    font-size: 1.8rem;
+  }
+
+  .navbar2_link {
+    transition: all .4s;
+  }
+
+  .navbar2_link:hover {
+    border-radius: var(--5px);
+    background-color: var(--orange);
+    color: var(--_primitives---colors--white);
+  }
+
+  .home_projektuberblick_content {
+    grid-template-columns: 1fr;
+  }
+
+  .home_einblicke_content-wrapper {
+    grid-column-gap: 6rem;
+    grid-row-gap: 6rem;
+  }
+
+  .home_einblicke_mobile-image {
+    border: 1px solid #000;
+  }
+
+  .home_einblicke_component {
     grid-template-columns: 1fr;
   }
 
@@ -3524,7 +3564,9 @@ figcaption {
   }
 
   .home_technologien_list {
-    grid-template-columns: 1fr;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    grid-template-columns: 1fr 1fr;
   }
 
   .home_unser-weg_item {
@@ -3535,7 +3577,21 @@ figcaption {
     grid-column-gap: 1rem;
   }
 
-  .home_was-wir-gelernt-haben_content, .home_dokumente-materialien_content, .team_list, .layout3_content {
+  .home_was-wir-gelernt-haben_content, .home_dokumente-materialien_content {
+    grid-template-columns: 1fr;
+  }
+
+  .lottie-wrapper {
+    width: 4.5rem;
+    margin-top: 0;
+    margin-bottom: 1.3rem;
+  }
+
+  .top-uberschrift {
+    font-size: .8rem;
+  }
+
+  .team_list, .layout3_content {
     grid-template-columns: 1fr;
   }
 
@@ -4962,12 +5018,24 @@ figcaption {
   justify-self: end;
 }
 
+@media screen and (max-width: 991px) {
+  #w-node-ccbc508c-31e1-4c1b-8124-e8b53e653f98-41122243 {
+    order: 9999;
+  }
+}
+
 @media screen and (max-width: 767px) {
   #w-node-ccbc508c-31e1-4c1b-8124-e8b53e654060-41122243 {
     justify-self: start;
   }
 
   #w-node-ccbc508c-31e1-4c1b-8124-e8b53e654080-41122243, #w-node-ccbc508c-31e1-4c1b-8124-e8b53e65409c-41122243 {
+    order: -9999;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  #w-node-ccbc508c-31e1-4c1b-8124-e8b53e6540b5-41122243 {
     order: -9999;
   }
 }
